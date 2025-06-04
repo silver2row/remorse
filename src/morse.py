@@ -72,8 +72,8 @@ gpio8.request(consumer="BeagleY-AI", type=gpiod.LINE_REQ_DIR_OUT, default_val=0)
 
 try:
     while True:
-        input = input('What shall we send...?')
-        for letter in input:
+        put = input('What shall we send...?')
+        for letter in put:
             for symbol in CODE[letter.upper()]:
                 if symbol == '-':
                     dash()
