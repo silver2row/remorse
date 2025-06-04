@@ -1,6 +1,6 @@
 # remorse
 
-Morse Code and Testing on LEDs and the BeagleY-AI
+Morse Code and Testing on LEDs and the `BeagleY-AI`
 
 ... So far we have working LEDs on morse and remorse Python3 Files ...
 
@@ -15,3 +15,5 @@ and then cleaning and an exception...
 ```
 
 Enjoy...
+
+### the ermorse.py file was found via AI on Google's Search Labs ###
