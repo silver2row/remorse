@@ -63,7 +63,7 @@ def dot():
 
 def dash():
         gpio8.set_value(1)
-        sleep(0.5)
+        sleep(0.6)
         gpio8.set_value(0)
         sleep(0.2)
 
@@ -80,8 +80,8 @@ try:
                 elif symbol == '.':
                     dot()
                 else:
-                    sleep(0.5)
-        sleep(0.5)
+                    sleep(1)
+        sleep(1)
 except KeyboardInterrupt:
     gpio8.set_value(0)
     pass
