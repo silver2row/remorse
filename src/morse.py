@@ -57,15 +57,15 @@ CODE = {' ': ' ',
 
 def dot():
         gpio8.set_value(1)
-        sleep(0.2)
+        sleep(0.5)
         gpio8.set_value(0)
-        sleep(0.2)
+        sleep(0.5)
 
 def dash():
         gpio8.set_value(1)
-        sleep(0.5)
+        sleep(1.5)
         gpio8.set_value(0)
-        sleep(0.2)
+        sleep(0.5)
 
 gpio8 = gpiod.find_line("GPIO14")
 gpio8.request(consumer="BeagleY-AI", type=gpiod.LINE_REQ_DIR_OUT, default_val=0)
@@ -85,4 +85,4 @@ try:
 except KeyboardInterrupt:
     gpio8.set_value(0)
     pass
-    print("Hey...done for now?")
+    print("\nHey...done for now?\n")

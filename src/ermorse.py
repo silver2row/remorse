@@ -32,7 +32,7 @@ def morse_to_text(morse):
     return text.strip()
 
 # Example usage
-text = "Hello World"
+text = "Central Time is King..."
 morse = text_to_morse(text)
 print(f"Text: {text}")
 print(f"Morse: {morse}")
